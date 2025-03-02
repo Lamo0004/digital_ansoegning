@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Web fonte */
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("fonts/SFProDisplay-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("fonts/SFProDisplay-Bold.woff2") format("woff2");
+  font-weight: 900;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(207, 211, 217);
+  padding-inline: 1rem;
+  font-family: "SF Pro Display";
+}
+
+ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+li:nth-child(1) {
+  font-size: 1.5rem;
+}
+
+li:nth-child(2) {
+  font-weight: 900;
+}
+
+li {
+  list-style: none;
+  align-content: center;
+}
+
+body {
+  background-color: #b7bcc4;
+  overflow: hidden;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-family: "Nothing You Could Do";
+  margin-top: 7rem;
+  margin-left: 4rem;
+}
+
+h2 {
+  font-family: "SF Pro Display";
+  font-weight: 200;
+  font-style: italic;
+  margin-left: 4rem;
+}
+
+h3 {
+  font-family: "SF Pro Display";
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-family: "SF Pro Display";
+  font-weight: 200;
+  font-style: italic;
+  margin-top: 0.2rem;
+}
+
+h5 {
+  font-family: "SF Pro Display";
+  font-weight: 200;
+  margin-top: 0.3rem;
+}
+
+h6 {
+  font-family: "SF Pro Display";
+  font-weight: 900;
+  text-align: center;
+  text-shadow: 3px 3px 6px rgba(48, 48, 49, 0.27);
+}
+
+.folders {
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  gap: 2rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.folder {
+  cursor: pointer;
+}
+
+.magi_video {
+  display: none;
+  position: fixed;
+  top: 5rem;
+  left: 5rem;
+  width: 70%;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px 15px rgba(48, 48, 49, 0.27);
+  z-index: 2;
+}
+
+.bog_billede {
+  display: none;
+  position: fixed;
+  bottom: 6rem;
+  right: 5rem;
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px 15px rgba(48, 48, 49, 0.27);
+  z-index: 2;
+}
+
+.pil_container {
+  margin-top: 16rem;
+}
+
+.pil {
+  width: 4rem;
+  transform: rotate(330deg);
+  animation: pulse_kf 1s ease-in-out infinite;
+}
+
+@keyframes pulse_kf {
+  0% {
+    transform: scale(0.8);
+  }
+
+  50% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+.post_it {
+  background-color: rgb(255, 252, 176);
+  width: 20rem;
+  height: 15rem;
+  padding: 1rem;
+  bottom: 7rem;
+  right: 35rem;
+  position: fixed;
+  z-index: 1;
+}
+
+.picture {
+  grid-column: 4;
+  width: 70%;
+  margin: 5rem;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px 15px rgba(48, 48, 49, 0.27);
+}
+
+footer {
+  position: fixed;
+  margin-inline: 4rem;
+  bottom: 0.5rem;
+}
