@@ -48,6 +48,10 @@ li {
   align-content: center;
 }
 
+p {
+  align-content: center;
+}
+
 body {
   background-color: #b7bcc4;
   overflow: hidden;
@@ -74,6 +78,7 @@ h2 {
 
 h3 {
   font-family: "SF Pro Display";
+  font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
@@ -121,7 +126,7 @@ h6 {
   z-index: 2;
 }
 
-.bog_billede {
+.book_img {
   display: none;
   position: fixed;
   bottom: 6rem;
@@ -162,7 +167,7 @@ h6 {
   height: 15rem;
   padding: 1rem;
   bottom: 7rem;
-  right: 35rem;
+  right: 32rem;
   position: fixed;
   z-index: 1;
 }
